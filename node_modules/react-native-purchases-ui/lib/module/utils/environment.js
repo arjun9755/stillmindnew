@@ -1,0 +1,48 @@
+import { NativeModules, Platform } from "react-native";
+
+/**
+ * Detects if the app is running in an environment where native modules are not available
+ * (like Expo Go or Web) or if the required native modules are missing.
+ *
+ * @returns {boolean} True if the app is running in an environment where native modules are not available
+ * (like Expo Go or Web) or if the required native modules are missing.
+ */
+export function shouldUsePreviewAPIMode() {
+  if (isExpoGo()) {
+    console.log('Expo Go app detected. Using RevenueCat in Preview API Mode.');
+    return true;
+  } else if (isRorkSandbox()) {
+    console.log('Rork app detected. Using RevenueCat in Preview API Mode.');
+    return true;
+  } else if (isWebPlatform()) {
+    console.log('Web platform detected. Using RevenueCat in Preview API Mode.');
+    return true;
+  } else {
+    return false;
+  }
+}
+/**
+ * Detects if the app is running in Expo Go
+ */
+function isExpoGo() {
+  var _globalThis$expo;
+  if (!!NativeModules.RNPaywalls && !!NativeModules.RNCustomerCenter) {
+    return false;
+  }
+  return !!((_globalThis$expo = globalThis.expo) !== null && _globalThis$expo !== void 0 && (_globalThis$expo = _globalThis$expo.modules) !== null && _globalThis$expo !== void 0 && _globalThis$expo.ExpoGo);
+}
+
+/**
+ * Detects if the app is running in the Rork app
+ */
+function isRorkSandbox() {
+  return !!NativeModules.RorkSandbox;
+}
+
+/**
+ * Detects if the app is running on web platform
+ */
+function isWebPlatform() {
+  return Platform.OS === 'web';
+}
+//# sourceMappingURL=environment.js.map

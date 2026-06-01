@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="12dp"
+    android:background="@drawable/widget_background">
+
+    <!-- Stone emoji -->
+    <TextView
+        android:id="@+id/widget_stone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🪨"
+        android:textSize="32sp"
+        android:gravity="center"
+        android:layout_marginBottom="6dp" />
+
+    <!-- Main message -->
+    <TextView
+        android:id="@+id/widget_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Heute noch nichts."
+        android:textSize="11sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:maxLines="2"
+        android:layout_marginBottom="3dp" />
+
+    <!-- Sub message -->
+    <TextView
+        android:id="@+id/widget_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="60 Sekunden reichen."
+        android:textSize="9sp"
+        android:textColor="#73FFFFFF"
+        android:gravity="center"
+        android:maxLines="1" />
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+{
+  "ios": {
+    "bundleIdentifier": "com.dennis19991808.mobile"
+  },
+  "extra": {
+    "eas": {
+      "projectId": "db6578f4-6cd7-4acb-a2c2-f08115ac00dc"
+    }
+  },
+  "expo": {
+    "ios": {
+      "buildNumber": "62",
+      "bundleIdentifier": "com.dennis19991808.mobile"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "db6578f4-6cd7-4acb-a2c2-f08115ac00dc"
+      }
+    }
+  }
+}

@@ -1,0 +1,3 @@
+source "https://rubygems.org"
+gem "cocoapods"
+gem "xcodeproj", :git => "https://github.com/CocoaPods/Xcodeproj.git", :branch => "master"

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>de</string>
+    <key>CFBundleDisplayName</key>
+    <string>StillMind</string>
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+    <key>CFBundleIdentifier</key>
+    <string>de.stillmind.app.watchkitapp</string>
+    <key>CFBundleName</key>
+    <string>$(PRODUCT_NAME)</string>
+    <key>CFBundlePackageType</key>
+    <string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>NSHealthShareUsageDescription</key>
+    <string>StillMind nutzt deine Herzfrequenz und HRV, um Stress-Momente zu erkennen und eine Atemübung vorzuschlagen.</string>
+    <key>NSHealthUpdateUsageDescription</key>
+    <string>StillMind speichert Achtsamkeits-Sessions in der Gesundheits-App.</string>
+    <key>WKApplication</key>
+    <true/>
+    <key>WKCompanionAppBundleIdentifier</key>
+    <string>de.stillmind.app</string>
+    <key>UIDeviceFamily</key>
+    <array>
+        <integer>4</integer>
+    </array>
+</dict>
+</plist>
